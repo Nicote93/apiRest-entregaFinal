@@ -1,0 +1,23 @@
+{
+  "name": "api-rest-entrega-final",
+  "version": "1.0.0",
+  "description": "Proyecto final Back End - Talento Tech 2025: Sistema de  gestión de productos con Express y Firebase",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "module",
+    "url": "git+https://github.com/Nicote93/apiRest-entregaFinal.git"
+  },
+  "author": "Nicolas Tello - Nicote93",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nicote93/apiRest-entregaFinal/issues"
+  },
+  "homepage": "https://github.com/Nicote93/apiRest-entregaFinal#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
