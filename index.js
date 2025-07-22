@@ -1,8 +1,11 @@
 import "dotenv/config";// Carga variables entorno desde .env
 import express from "express";// Traigo express
+import cors from "cors";// Traigo cors
 const app = express();// Inicio express
 
 app.use(express.json());// Parsear JSON
+
+app.use(cors());//Permite origenes cruzados
 
 app.get("/", (req, res) => {
   res.json({ message: "Bienvenido a la API REST - Talento tech 2025 by Nicote93" });// mensaje de bienvenida

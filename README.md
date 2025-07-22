@@ -63,13 +63,13 @@ Finalmente, la aplicación debe contemplar el manejo de errores de forma clara, 
 
 2. Instalar las dependencia
 
-```shell
+```bash
 npm install
 ```
 
 ## Ejecutar el proyecto
 
-```shell
+```bash
 npm run dev
 ```
 ## Pagina de inicio
