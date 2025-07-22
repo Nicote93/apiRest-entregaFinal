@@ -3,6 +3,7 @@ import jwt from "jsonwebtoken"; // Traigo jsonwebtoken
 export const auth = (req, res, next) => {
   const token = req.headers["authorization"]?.split(" ")[1];// Obtengo el token del header Authorization
   // Verifica si el token existe en la cabecera Authorization
+  // ?.split separa string en un array - beare por un lado y el token por otro 
 
   if (!token) return res.sendStatus(401);// Si no hay token, retorna 401
 

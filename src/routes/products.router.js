@@ -1,5 +1,5 @@
-import { Router } from "express";
-const router = Router();
+import { Router } from "express";// Importo Router de express
+const router = Router();// manejar las rutas de productos
 
 import { 
     getAllProducts,
@@ -13,7 +13,7 @@ import { auth } from "../middlewares/auth.middleware.js";// Traigo el middleware
 
 //rutas de acciones en productos
 router.get("/products", getAllProducts);
-router.get("/products/:id", getProductById);
+router.get("/products/:id", auth, getProductById);
 router.post("/products", auth, createProduct);
 router.put("/products/:id", auth, updateProduct);
 router.delete("/products/:id", auth, deleteProduct); 
